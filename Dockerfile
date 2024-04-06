@@ -9,7 +9,7 @@ ENV GIT_BRANCH ${GIT_BRANCH}
 WORKDIR /root/
 
 RUN curl -fsSL\
-    "https://raw.githubusercontent.com/oliverwiegers/dotfiles/${GIT_BRANCH}/install.sh" -o install.sh \
+    "https://raw.githubusercontent.com/Le4kno3/pentest_lab_build/prod/dotfiles/install" -o install.sh \
     && chmod +x install.sh \
     && git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf \
     && ./.fzf/install --no-update-rc --no-key-bindings --no-completion \
